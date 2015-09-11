@@ -1,0 +1,153 @@
+body{
+	margin-top: 0px;
+	background: url('../img/Fondo Rompe Cabeza.png') no-repeat fixed center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/************ ventana modal **************/
+
+.black_overlay { /* afuera: la parte oscura */
+	display: none;
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0,0,0,0.8);
+	z-index: 100;
+	opacity:1;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+}
+
+.white_content { /* adentro: la ventana modal */
+	display: none;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	width: 40%;
+	height: 30%;
+	padding: 5px 20px 13px 20px;
+	background: #fff;
+	border-radius:3px;
+	-webkit-transition: all 500ms ease-in;
+	-moz-transition: all 500ms ease-in;
+	transition: all 500ms ease-in;
+}
+
+.close {
+    background: #606061;
+    color: #fff;
+    line-height: 25px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    top: 1px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:3px;
+}
+ 
+.close:hover {
+    background: #FAAC58;
+    color:#222;
+}
+
+/************ este es el contenedor de las piezas **************/
+
+#piezas{		
+	float: left;
+	width: 20%;
+	height: 100vh;
+	overflow: scroll;
+}
+
+#piezas > div {
+	margin: 2px;
+	max-width: 100%;
+}
+
+
+.imagen{
+	max-width: 100%;
+}
+
+.blanco{
+}
+
+
+/************ este es el contenedor del tablero ***********/
+
+#tablero{		
+	float: left;
+	width: 80%;
+}
+
+#drop{
+	background-image: url(../img/tarjetamadre.png);
+    width: 708px;
+    height: 580px;
+	margin: auto;
+}
+
+#pieza1{
+	position: absolute;
+	width: 310px;
+	height: 15px;
+	margin-top: 120px;
+	margin-left: 130px;
+	z-index: 1;
+}
+#pieza2{
+	position: absolute;
+	width: 310px;
+    height: 15px;
+    margin-top: 157px;
+    margin-left: 129px;
+	z-index: 1;
+}
+
+#pieza3{
+	background: #8895A0;
+	position: absolute;
+	width: 116px;
+	height: 118px;
+	margin-top: 243px;
+	margin-left: 139px;
+	z-index: 6;
+}
+
+#pieza4{
+	position: absolute;
+	width: 86px;
+	height: 329px;
+	margin-top: 207px;
+	margin-left: 508px;
+}
+
+#pieza5{
+	position: absolute;
+	width: 227px;
+	height: 66px;
+	margin-top: 40px;
+	margin-left: 556px;
+}
+
+#pieza6{
+	position: absolute;
+	width: 205px;
+	height: 35px;
+	margin-top: 210px;
+	margin-left: 101px;
+	z-index: 6;
+}
+/* 
+#pieza7{
+	position: absolute;
+	margin-top: 150px;
+    margin-left: 165px;
+	z-index: 0;
+} */
